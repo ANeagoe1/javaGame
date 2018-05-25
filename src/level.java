@@ -3,10 +3,7 @@ public class level {
     public boolean isGameDone(){
         return false;
     }
-    public void moveUp(){}
-    public void moveDown(){}
-    public void moveLeft(){}
-    public void moveRight(){}
+    
     public void start(){}
     public boolean isAutoStart(){
         return true;
