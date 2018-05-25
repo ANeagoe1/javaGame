@@ -20,12 +20,12 @@ public class game {
         levels[8] = new levelOne();
         levels[9] = new levelTen();
 
-        while(gameRunning == true){ //loop that checks of the game is running, and if it is
+        while(gameRunning == true){ //loop that checks of the game is running, and if it is true it lets the loop inside cycle through each level
             levels[levelIndex].init();
             levels[levelIndex].start();
             levelRunning = true;
            
-            while(levelRunning == true){//loop that 
+            while(levelRunning == true){//loop that runs each level 
                 keyboardInput = keyboard.nextLine();
                
                
@@ -36,13 +36,13 @@ public class game {
 
 
             }
-            levelIndex++;
-            if(levelIndex >= levels.length){
-                gameRunning = false;
+            levelIndex++; //adds one to the level index , moving from one level to the next one,
+            if(levelIndex >= levels.length){  
+                gameRunning = false; //checks to see if the level index number is greater than the length, if so it sets gameRunning to false, which ends the game
+                
             }
-
         }
-        System.out.println("Game Complete");
+        System.out.println("Game Complete"); //endgame text
 
 
     }
