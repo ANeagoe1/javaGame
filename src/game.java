@@ -2,7 +2,7 @@ import java.util.*;
 public class game {
 
    static boolean gameRunning = true;
-   static boolean levelRunning = true; //lets the game run
+   static boolean levelRunning = true; //declares gameRunning and levelRunning as true, allowing the program to run
    static int levelIndex = 0;
     public static void main (String[] args){
         Scanner keyboard = new Scanner(System.in);
