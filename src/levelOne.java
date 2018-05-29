@@ -7,12 +7,12 @@ public class levelOne extends level {
     public boolean isGameDone(){ //game is defined as not done yet, once set to true the game ends
         return false;
     }
-    public boolean isLevelDone(){//this is checked for the level being 
+    public boolean isLevelDone(){ //this is checked for the level being 
         return levelDone;
     }
 
     public void start(){
-        System.out.println("What is 2+2?");//the actual game that the players get to interact with
+        System.out.println();//the actual game that the players get to interact with
     }
     public boolean isAutoStart(){
         return true;
